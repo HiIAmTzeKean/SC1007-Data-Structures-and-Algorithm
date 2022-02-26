@@ -1,10 +1,14 @@
-Given a pre-order and post-order sequence, we create a tree out of it.
+Given a pre-order and post-order sequence, we create a tree out of it.  
 
-Test case:
-124567389
+Assumptions:  
+1. No duplicate nodes
+2. No memory constrains since we will be utilising arrays to store the sequence
+
+Test case:  
+124567389  
 564729831
 
-Output:
+Output:  
 546271983
 
 ```
