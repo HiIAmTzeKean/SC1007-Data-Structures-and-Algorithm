@@ -1,4 +1,4 @@
-We detect that we are at root node when both pointers left and right are to NULL.
+We detect that we are at leaf node when both pointers left and right are to NULL.
 
 ```
 int sumOfLeaf(BTNode *root)
