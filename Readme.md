@@ -1,1 +1,1 @@
-Compilation of questions I have seen from various sources
+# SC1007 Data structures and algorithms
