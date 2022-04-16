@@ -1,6 +1,6 @@
 [Pascal Triangle](https://leetcode.com/problems/pascals-triangle/)
 
-```
+```c
 /**
  * Return an array of arrays of size *returnSize.
  * The sizes of the arrays are returned as *returnColumnSizes array.
@@ -18,9 +18,11 @@ int** generate(int numRows, int* returnSize, int** returnColumnSizes)
     for (int i = 0; i < numRows; i++) {
         // Create row to be filled
         res[i] = malloc((i+1)*sizeof(int));
+
         // Corner of row is always 1
         res[i][0] = res[i][i] = 1;
         (*returnColumnSizes)[i] = i+1;
+        
         // Sum every 2 sequential col
         for (int j = 1; j < i; j++) res[i][j] = res[i-1][j-1] + res[i-1][j];
     }

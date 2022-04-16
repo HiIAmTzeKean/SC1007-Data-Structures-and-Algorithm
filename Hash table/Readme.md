@@ -9,7 +9,7 @@ Time to insert = O(1)
 Time complexity of search insert and delete is 
 O(1) if  α is O(1)  
 
-# Open addressing
+## Open addressing
 
 Insert, Search operation involve probing till element inserted or found
 Delete operation marks element, mark identifies element as deleted and signals possible insertion point
