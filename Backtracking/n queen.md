@@ -31,8 +31,13 @@ int isSafe(int **board, int n, int c, int r)
     for (int i=0,i<c;i++)
         if (board[r][c]==1) return 0;
     // Check diagonal
-    for (int i=1;c-i>=0;i++)
-        if (board[r-i][c-i]==1 || board[r+i][c-i]==1) return 0;
+    for(int i=0;i<n;i++)
+    {
+        if(row+i<n && col-i>-1)
+            if(board[row+i][col-i]) return 0;
+        if(row-i>-1 && col-i>-1)
+            if(board[row-i][col-i]) return 0;
+    }
     return 1;
 }
 ```
