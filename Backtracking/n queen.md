@@ -1,6 +1,6 @@
 # n queen problem
 
-Assume isSafe function is established for now. We create a function that counts the number of possible complete solution. 
+Assume isSafe function is established for now. We create a function that counts the number of possible complete solution.
 
 ```c
 int count=0;
@@ -23,6 +23,8 @@ int nQueen(int **board, int n, int c)
     return 0;
 }
 ```
+
+Refer to isSafe function here. The function checks if the current column violates any of the constraints by testing if the queen placed at the current row and col will attack any of the other queen in col[0:current-1].
 
 ```c
 int isSafe(int **board, int n, int c, int r)

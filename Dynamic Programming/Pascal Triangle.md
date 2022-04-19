@@ -1,4 +1,6 @@
-[Pascal Triangle](https://leetcode.com/problems/pascals-triangle/)
+# Pascal triangle
+
+The question can be found on [Pascal Triangle](https://leetcode.com/problems/pascals-triangle/)
 
 ```c
 /**
