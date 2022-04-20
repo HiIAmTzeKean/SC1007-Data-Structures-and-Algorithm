@@ -1,6 +1,6 @@
 Find smallest value in tree
 
-```
+```c
 int smallestValue(BTNode *node){
     int L,R;
     L=R=node->item;

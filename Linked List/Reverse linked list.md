@@ -16,3 +16,5 @@ Node* reverse(Node head)
     return prev;
 }
 ```
+
+Copyright © 2022 Ng Tze Kean, Github @HiIAmTzeKean

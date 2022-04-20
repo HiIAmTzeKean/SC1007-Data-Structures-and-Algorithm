@@ -1,4 +1,7 @@
-[Unique Path](https://leetcode.com/problems/unique-paths/)
+# Unique path
+
+The question can be found on [Unique Path](https://leetcode.com/problems/unique-paths/)
+
 Robot that can only move down or right.
 Solved with memoization
 
@@ -31,3 +34,5 @@ int helper(int m, int n)
     return table[m-1][n-1]=table[m-2][n-1]+table[m-1][n-2];
 }
 ```
+
+Copyright © 2022 Ng Tze Kean, Github @HiIAmTzeKean

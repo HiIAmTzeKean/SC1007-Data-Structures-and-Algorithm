@@ -31,3 +31,6 @@ int** generate(int numRows, int* returnSize, int** returnColumnSizes)
     return res;
 }
 ```
+
+Copyright © 2022 Ng Tze Kean, Github @HiIAmTzeKean
+

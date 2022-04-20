@@ -1,4 +1,6 @@
-```
+# Recursive Linked list reversal
+
+```c
 Node* reverseLL(Node *head)
 {
     if (head==NULL)
@@ -11,3 +13,5 @@ Node* reverseLL(Node *head)
     return cur;
 }
 ```
+
+Copyright © 2022 Ng Tze Kean, Github @HiIAmTzeKean

@@ -2,8 +2,6 @@
 
 The question can be found on [climbing stairs](https://leetcode.com/problems/climbing-stairs/)
 
-You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?  
-
 ## Dynamic programming solution
 
 What we can do is to use an array to store the optimal solution for each step n, and progressively fill the array bottom up.
@@ -48,3 +46,5 @@ int climbStairs(int n)
     return arr[1];
 }
 ```
+
+Copyright © 2022 Ng Tze Kean, Github @HiIAmTzeKean

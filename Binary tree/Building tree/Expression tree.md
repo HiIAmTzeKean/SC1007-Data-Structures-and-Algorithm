@@ -1,6 +1,9 @@
+# Expression tree
+
 Given a pre-order and in-order sequence, we create a tree out of it.  
 
 Assumptions:
+
 1. No duplicate nodes
 2. No memory constrains since we will be utilising arrays to store the sequence
 
@@ -11,7 +14,7 @@ Test case:
 Output:  
 564729831  
 
-```
+```c
 void buildTree(BTNode** node, char* preO, char* inO)
 {
     int i=0,j=0;

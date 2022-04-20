@@ -43,3 +43,5 @@ int isSafe(int **board, int n, int c, int r)
     return 1;
 }
 ```
+
+Copyright © 2022 Ng Tze Kean, Github @HiIAmTzeKean
