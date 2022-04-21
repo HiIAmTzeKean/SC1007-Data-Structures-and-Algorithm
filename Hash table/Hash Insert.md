@@ -23,16 +23,15 @@ ListNode* HashSearch(HashTable Q3Hash, int key)
     return NULL;
 }
 
-int HashInsertFront(HashTable* Q3HashPtr, int key)
+int HashInsert(HashTable* Q3HashPtr, int key)
 {
     // Perform duplicate check first
     if (HashSearch(*Q3HashPtr,key)!=NULL)
         return 0;
     
-    // Perform sanity check on size of table
+    // Perform sanity check if table is of valid size
     if (Q3Hash->hSize<=0)
         return 0;
-    
     
     // insert into hash slot as front
     ListNode *newnode=malloc(sizeof(ListNode));
