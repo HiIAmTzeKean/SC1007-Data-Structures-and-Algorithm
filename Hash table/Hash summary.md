@@ -25,7 +25,7 @@ n = Number of keys to be inserted in hash table
 Load factor α = n/m, the average number of nodes in each linked list  
 ![Chaining](Chaining.jpg)  
 
-### Time complexity analysis
+### Time complexity analysis (Close addressing)
 
 Worse-case scenario
 
@@ -46,7 +46,7 @@ Insert, Search operation involve probing till element inserted or found
 Delete operation marks element, mark identifies element as deleted and signals possible insertion point  
 α will never be greater than 1, since each slot can only have 1 element
 
-## Linear probing
+### Linear probing
 
 (hash(input) + i) % HASHTABLESIZE  
 Performs hash function to find index, increment index by 1 till inserted  
@@ -54,19 +54,29 @@ Performs hash function to find index, increment index by 1 till inserted
 Primary clustering - elements cluster, insert and search increasingly linear  
 Secondary clustering - same collision chain causing same sequence of probing  
 
-## Quadratic probing
+### Quadratic probing
 
-(hash(input) + i * i^2) % HASHTABLESIZE
+$(hash(input)+i \times i^2 ) \bmod HASHTABLESIZE$
 
-## Randomizer
+### Randomizer
 
 srand(time(NULL))  
 
-## Double hasing
+### Double hasing
 
 (hash(input) + i * hash(input)) % HASHTABLESIZE
 
+### Time complexity analysis (Open addressing)
+
+Linear probing  
+if a search is successful: $\frac{1}{2}(1+\frac{1}{1−\alpha})$  
+if a search is unsuccessful: $\frac{1}{2}(1+\frac{1}{1−\alpha}^2)$  
+
 ## Summarise
 
-Closed addressing: O(α) on average
+Closed addressing: O(α) on average  
 Open addressing: O(function(1/(1-α))) on average
+
+---
+
+Copyright © 2022 Ng Tze Kean, Github @HiIAmTzeKean
