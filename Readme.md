@@ -1,8 +1,8 @@
 # SC1007 Data structures and algorithms
 
-Course: SC1007
-Year: 2022
-Professors who taught the course are Professor Loke and Professor Ann
+Course: SC1007  
+Year: 2022  
+Professors who taught the course are Professor Loke and Professor Anh Tuan  
 
 ---
 
