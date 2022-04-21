@@ -20,6 +20,7 @@ int helper(int m, int n)
 {
     // Breaking down the program into smaller square for each move
     // Base condition
+    if (table[m-1][n-1]!=0) return table[m-1][n-1]
     if (m<1 || n<1) return 0;
     if (m==1 || n==1)
     {

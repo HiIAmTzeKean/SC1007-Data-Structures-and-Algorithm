@@ -1,4 +1,4 @@
-# Hash insert
+# Hash tables (Closed addressing)
 
 ```c
 int Hash(int key,int hSize);
@@ -44,5 +44,32 @@ int HashInsert(HashTable* Q3HashPtr, int key)
     //increment table values
     Q3Hash->nSize++;
     Q3Hash->Table[hashValue].size++;
+}
+
+int HashDelete(HashTable* Q3HashPtr, int key)
+{
+    // Perform check if node exist first
+    if (HashSearch(*Q3HashPtr,key)==NULL)
+        return 0;
+    
+    // Perform sanity check if table is of valid size
+    if (Q3Hash->hSize<=0)
+        return 0;
+
+    // Obtain hash value of the key
+    int hashValue=Hash(key,Q3HashPtr->hSize);
+
+    ListNode *curr=Q3Hash->Table[hashValue].head;
+    while (curr->next!=NULL && curr->next->key!=key)
+        curr=curr->next;
+
+    //curr->next is the target node we want to del
+    ListNode *temp=curr->next;
+    curr->next->next=curr->next;
+    free(temp);
+
+    //decrement table values
+    Q3Hash->nSize--;
+    Q3Hash->Table[hashValue].size--;
 }
 ```

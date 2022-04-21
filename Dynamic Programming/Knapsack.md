@@ -1,4 +1,4 @@
-# Knapsack
+# 0/1 Knapsack
 
 Naive approach to solve the problem will mean for each item we can choose to keep it or to not keep it. For N items, we then have $O(2^n)$ time complexity.
 
